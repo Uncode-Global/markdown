@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/css/style.css" | relative_url }}">
+  <script src="{{ "/js/script.js" | relative_url }}"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/categoria.html">Categoria</a>
-            <a href="/produto.html">Produto</a>
-            <a href="/institucional.html">Institucional</a>
-            <a href="/macro.html">Macro</a>
-        </nav>
-    </header>
-    
-    <main>
-        {{ content }}
-    </main>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ "/" | relative_url }}">Home</a></li>
+        <li><a href="{{ "/pages/about.md" | relative_url }}">Sobre</a></li>
+        <li><a href="{{ "/pages/contato.md" | relative_url }}">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
 </body>
 </html>

@@ -1,3 +1,5 @@
-title: "Meu Site"
-description: "Descrição do site"
-theme: jekyll-theme-slate  # ou qualquer tema que preferir
+title: Meu Site
+baseurl: ""
+url: "https://seu-usuario.github.io"  # Substitua com sua URL do GitHub Pages
+markdown: kramdown
+theme: minima  # Um tema simples do Jekyll (você pode usar outro)
